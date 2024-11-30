@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube</title>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="cursor.css">
+    <link rel="stylesheet" href="sidebartoggle.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" href="" >
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+        </div>
+        <img class="current-user-picture" src="pictures/my-channel.jpeg">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+     <div id="sidebar">
+     <div id="toggleMenu" onClick="toggle()">
+          <span id="one"></span>
+          <span id="two"></span>
+          <span id="three"></span>
+        </div>
+      <div class="sidebar-link">
+        <img src="icons/home.svg"><a href="https://www.youtube.com/">
+        <div>Home</div>
+      </a>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg"><a href="https://www.youtube.com/gaming">
+        <div>Explore</div>
+      </a>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg"><a href="https://www.youtube.com/feed/subscriptions">
+        <div>Subscriptions</div>
+      </a>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg"><a href="https://tv.youtube.com/welcome/?utm_source=youtube_web&utm_medium=ep&utm_campaign=home&ve=34273&utm_servlet=prod">
+        <div>Originals</div>
+      </a>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg"><a href="https://music.youtube.com/">
+        <div>YouTube Music</div>
+      </a>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg"><a href="https://www.youtube.com/feed/library">
+        <div>Library</div>
+      </a>
+      </div>
+     </div>
+     </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            <div class="video-time">8:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="pictures/channel-1.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"> <a href="https://www.youtube.com/watch?v=yg_W09rX_ak&ab_channel=JJOlatunji">
+                I Get My Revenge!
+              </a>
+              </p>
+              <p class="video-author"> <a href="https://www.youtube.com/@jjolatunji">
+                JJ Olatunji
+              </a>
+              </p>
+              <p class="video-stats">
+                1,737,946 views &#183;  18 Feb 2023
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            <div class="video-time">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="pictures/channel-2.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"> <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk&ab_channel=Markiplier">
+                Try Not To Laugh Challenge #9
+              </a>
+              </p>
+              <p class="video-author"> <a href="https://www.youtube.com/markiplier">
+                Markiplier
+              </a>
+              </p>
+              <p class="video-stats">
+                20,554,868 views &#183;   17 Sept 2017
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+            <div class="video-time">1:14:55</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="pictures/channel-3.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"> <a href="https://www.youtube.com/watch?v=tQqq4Id6vM8&ab_channel=Sidemen">
+                SIDEMEN STAY AT WORLD'S WEIRDEST HOTELS
+              </a>
+              </p>
+              <p class="video-author"> <a href="https://www.youtube.com/@Sidemen">
+                Sidemen
+              </a>
+              </p>
+              <p class="video-stats">
+                8,600,304 views &#183;    13 Feb 2023
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+            <div class="video-time">22:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="pictures/channel-4.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"> <a href="https://www.youtube.com/watch?v=094y1Z2wpJg&ab_channel=Veritasium">
+                The Simplest Math Problem No One Can Solve - Collatz Conjecture
+              </a>
+              </p>
+              <p class="video-author"> <a href="https://www.youtube.com/@veritasium">
+                Veritasium
+              </a>
+              </p>
+              <p class="video-stats">
+                33,225,198 views &#183;   Jul 30, 2021
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+            <div class="video-time">3:33</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="pictures/channel-5.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"> <a href="https://www.youtube.com/watch?v=iVWsP3IadBk&ab_channel=SantanDave">
+                Dave - Starlight
+              </a>
+              </p>
+              <p class="video-author"> <a href="https://www.youtube.com/@SantanDave">
+                Santan Dave
+              </a>
+              </p>
+              <p class="video-stats">
+                43,577,844 views &#183;  4 Mar 2022
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+            <div class="video-time">1:58</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="pictures/channel-6.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"> <a href="https://www.youtube.com/watch?v=oP7KHC129RQ&ab_channel=CentralCee">
+                Central Cee - Obsessed With You (Official Video)
+              </a>
+              </p>
+              <p class="video-author"> <a href="https://www.youtube.com/@CentralCee">
+                Central Cee
+              </a>
+              </p>
+              <p class="video-stats">
+                86,111,436 views  &#183;  Premiered on 29 Oct 2021
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbail-7.webp">
+            <div class="video-time">8:34</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="pictures/channel-7.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"> <a href="https://www.youtube.com/watch?v=1RnIaSEqWPY&t=195s&ab_channel=JiDion">
+                Taking Bath During Online College Classes!
+              </a>
+              </p>
+              <p class="video-author"> <a href="https://www.youtube.com/@JiDion/featured">
+                JiDion
+              </a>
+              </p>
+              <p class="video-stats">
+                19,938,865 views  &#183;    5 Mar 2021
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
+            <div class="video-time">6:06</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="pictures/channel-8.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"> <a href="https://www.youtube.com/watch?v=ELFi7hgfA50&ab_channel=TottenhamHotspur">
+                SPURS prepare for CHELSEA clash! | TRAINING
+              </a>
+              </p>
+              <p class="video-author"> <a href="https://www.youtube.com/@TottenhamHotspur">
+                Tottenham Hotspur
+
+
+              </a>
+              </p>
+              <p class="video-stats">
+                78,983 views  &#183;   23 Feb 2023
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+  </body>
+</html>
